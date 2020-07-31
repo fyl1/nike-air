@@ -41,21 +41,20 @@ ul {
   margin: 0;
   list-style-type: none;
 }
+li {
+  list-style-type: none;
+}
+
 p {
   margin: 0;
 }
-// .container {
-//   display: block;
-//   width: calc(100% - 40px);
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// .container {
-//   display: block;
-//   width: 1500px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.container {
+  display: block;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // @media (min-width: 480px) {
 //   .container {
