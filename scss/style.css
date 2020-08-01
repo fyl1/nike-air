@@ -1,8 +1,143 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: normal;
+  src: local("BebasNeue Bold"), local("BebasNeue-Bold"), url("../fonts/BebasNeueBold.otf") format("otf"), url("../fonts/BebasNeueBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: normal;
+  src: local("BebasNeue-Book"), local("BebasNeue-Book"), url("../fonts/BebasNeue Book.otf") format("otf"), url("../fonts/BebasNeue Book.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 300;
+  font-style: normal;
+  src: local("BebasNeue-Light"), local("BebasNeue-Light"), url("../fonts/BebasNeue Light.otf") format("otf"), url("../fonts/BebasNeue Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue-Regular"), url("../fonts/BebasNeue Regular.otf") format("otf"), url("../fonts/BebasNeue Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 100;
+  font-style: normal;
+  src: local("BebasNeue-Thin"), local("BebasNeue-Thin"), url("../fonts/BebasNeue Thin.otf") format("otf"), url("../fonts/BebasNeue Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 900;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Black"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 900;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-BlackItalic"), url("../fonts/HelveticaNeueCyr-BlackItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 700;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: italic;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-BoldItalic"), url("../fonts/HelveticaNeueCyr-BoldItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-Italic"), url("../fonts/HelveticaNeueCyr-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Light"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-LightItalic"), url("../fonts/HelveticaNeueCyr-LightItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 500;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Medium"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 100;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Thin"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 100;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-ThinItalic"), url("../fonts/HelveticaNeueCyr-ThinItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 200;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-UltraLight"), url("../fonts/HelveticaNeueCyr-UltraLight.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 200;
+  font-style: italic;
+  src: local("HelveticaNeueCyr-UltraLightItalic"), url("../fonts/HelveticaNeueCyr-UltraLightItalic.ttf") format("ttf");
+}
+
 body {
+  width: 100%;
   margin: 0;
-  font-family: Copperplate, sans-serif;
   color: #000000;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -128,6 +263,7 @@ p {
 #menu__toggle:checked ~ .menu__btn > span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  background-color: transparent;
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before {
@@ -224,7 +360,7 @@ p {
   display: block;
   padding: 0px 24px;
   color: #454545;
-  font-family: "Roboto", sans-serif;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
   font-size: 20px;
   line-height: 35px;
   text-align: center;
@@ -259,6 +395,19 @@ p {
 
 .logo__caption {
   max-width: 310px;
+}
+
+.intro__title {
+  width: 100%;
+  font-size: 50px;
+  line-height: 73px;
+  font-family: "BebasNeueBold";
+  text-transform: uppercase;
+}
+
+.text--orange {
+  min-width: 100%;
+  color: #ffb380;
 }
 
 .modal {
