@@ -8,7 +8,7 @@ $font-fem: Copperplate, sans-serif;
   font-style: normal;
 }
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue-Bold";
   font-weight: 700;
   font-style: normal;
   src: local("BebasNeue Bold"), local("BebasNeue-Bold"),
@@ -16,7 +16,7 @@ $font-fem: Copperplate, sans-serif;
     url("../fonts/BebasNeueBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue-Book";
   font-weight: 400;
   font-style: normal;
   src: local("BebasNeue-Book"), local("BebasNeue-Book"),
@@ -24,7 +24,7 @@ $font-fem: Copperplate, sans-serif;
     url("../fonts/BebasNeue Book.ttf") format("ttf");
 }
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue-Light";
   font-weight: 300;
   font-style: normal;
   src: local("BebasNeue-Light"), local("BebasNeue-Light"),
@@ -33,7 +33,7 @@ $font-fem: Copperplate, sans-serif;
 }
 
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
   src: local("BebasNeue-Regular"), local("BebasNeue-Regular"),
@@ -41,7 +41,7 @@ $font-fem: Copperplate, sans-serif;
     url("../fonts/BebasNeue Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "BebasNeue";
+  font-family: "BebasNeue-Thin";
   font-weight: 100;
   font-style: normal;
   src: local("BebasNeue-Thin"), local("BebasNeue-Thin"),
@@ -49,91 +49,91 @@ $font-fem: Copperplate, sans-serif;
     url("../fonts/BebasNeue Thin.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Black";
   font-weight: 900;
   font-style: normal;
   src: local("HelveticaNeueCyr-Black"),
     url("../fonts/HelveticaNeueCyr-Black.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-BlackItalic";
   font-weight: 900;
   font-style: italic;
   src: local("HelveticaNeueCyr-BlackItalic"),
     url("../fonts/HelveticaNeueCyr-BlackItalic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Bold";
   font-weight: 700;
   font-style: normal;
   src: local("HelveticaNeueCyr-Bold"),
     url("../fonts/HelveticaNeueCyr-Bold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-BoldItalic";
   font-weight: italic;
   font-style: italic;
   src: local("HelveticaNeueCyr-BoldItalic"),
     url("../fonts/HelveticaNeueCyr-BoldItalic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Italic";
   font-weight: 400;
   font-style: italic;
   src: local("HelveticaNeueCyr-Italic"),
     url("../fonts/HelveticaNeueCyr-Italic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Light";
   font-weight: 300;
   font-style: normal;
   src: local("HelveticaNeueCyr-Light"),
     url("../fonts/HelveticaNeueCyr-Light.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-LightItalic";
   font-weight: 300;
   font-style: italic;
   src: local("HelveticaNeueCyr-LightItalic"),
     url("../fonts/HelveticaNeueCyr-LightItalic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Medium";
   font-weight: 500;
   font-style: normal;
   src: local("HelveticaNeueCyr-Medium"),
     url("../fonts/HelveticaNeueCyr-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
-  font-weight: 400;
-  font-style: normal;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-weight: 300;
+  font-style: italic;
   src: local("HelveticaNeueCyr-Roman"),
     url("../fonts/HelveticaNeueCyr-Roman.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Thin";
   font-weight: 100;
   font-style: normal;
   src: local("HelveticaNeueCyr-Thin"),
     url("../fonts/HelveticaNeueCyr-Thin.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-ThinItalic";
   font-weight: 100;
   font-style: italic;
   src: local("HelveticaNeueCyr-ThinItalic"),
     url("../fonts/HelveticaNeueCyr-ThinItalic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-UltraLight";
   font-weight: 200;
   font-style: normal;
   src: local("HelveticaNeueCyr-UltraLight"),
     url("../fonts/HelveticaNeueCyr-UltraLight.ttf") format("ttf");
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-UltraLightItalic";
   font-weight: 200;
   font-style: italic;
   src: local("HelveticaNeueCyr-UltraLightItalic"),
