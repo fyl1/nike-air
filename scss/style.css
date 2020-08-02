@@ -145,12 +145,10 @@ h1 {
 }
 
 h2 {
-  font-weight: 800;
-  font-size: 33px;
-  line-height: 46px;
-  letter-spacing: 0.1em;
+  font-size: 35px;
   margin: 0;
   text-transform: uppercase;
+  font-family: "BebasNeueBold", sans-serif;
 }
 
 h3 {
@@ -644,6 +642,7 @@ p {
 }
 
 .extra-card__title {
+  color: black;
   font-size: 13px;
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
@@ -713,6 +712,88 @@ p {
 .part--num {
   font-size: 11px;
   font-family: "HelveticaNeueCyr-Light", sans-serif;
+}
+
+.order-title {
+  text-align: center;
+}
+
+.order__list {
+  padding-bottom: 50px;
+}
+
+.order__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  border-radius: 50%;
+  background-image: linear-gradient(119deg, #febf94, #e68459);
+}
+
+.order__img--img {
+  width: 30px;
+}
+
+.order-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+  border: 1px soid #black;
+}
+
+.order-card__title {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.order-card__sub-title {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  text-align: center;
+}
+
+.footer {
+  max-height: 80px;
+  padding: 20px 0;
+  background-color: #f3f3f3;
+}
+
+.law-inner {
+  text-align: center;
+  color: #d2d2d2;
+  font-size: 14px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+}
+
+.law-link {
+  padding-top: 8px;
+}
+
+.law-link a {
+  text-align: center;
+  color: #959595;
 }
 
 .modal {
