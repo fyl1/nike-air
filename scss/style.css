@@ -16,7 +16,6 @@
 
 @font-face {
   font-family: "BebasNeue-Book";
-  font-weight: 400;
   font-style: normal;
   src: local("BebasNeue-Book"), local("BebasNeue-Book"), url("../fonts/BebasNeue Book.otf") format("otf"), url("../fonts/BebasNeue Book.ttf") format("ttf");
 }
@@ -158,6 +157,7 @@ h3 {
   font-size: 19px;
   line-height: 29px;
   margin: 0;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
 
 h4 {
@@ -605,6 +605,59 @@ p {
   font-size: 46px;
   line-height: 46px;
   margin-right: 5px;
+}
+
+.extra {
+  margin-top: 50px;
+}
+
+.extra__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.extra__img {
+  position: relative;
+}
+
+.extra-stock {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.extra-stock__text {
+  font-size: 13px;
+  font-family: "BebasNeue-Book", sans-serif;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  background-color: #e7875c;
+}
+
+.extra-card__caption {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 15px 25px 25px;
+}
+
+.extra-card__title {
+  font-size: 13px;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
+}
+
+.extra-card-stock {
+  padding-left: 20px;
+  font-size: 9px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+}
+
+.extra-card__sub-title {
+  font-size: 12px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  color: #dcdcdc;
 }
 
 .part {

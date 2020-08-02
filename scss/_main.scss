@@ -17,7 +17,6 @@ $font-fem: Copperplate, sans-serif;
 }
 @font-face {
   font-family: "BebasNeue-Book";
-  font-weight: 400;
   font-style: normal;
   src: local("BebasNeue-Book"), local("BebasNeue-Book"),
     url("../fonts/BebasNeue Book.otf") format("otf"),
@@ -163,6 +162,7 @@ h3 {
   font-size: 19px;
   line-height: 29px;
   margin: 0;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
 h4 {
   margin: 0;
