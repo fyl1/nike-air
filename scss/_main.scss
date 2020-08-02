@@ -143,6 +143,10 @@ body {
   color: #000000;
   overflow-x: hidden;
 }
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 h1 {
   font-size: 28px;
@@ -182,6 +186,10 @@ li {
 
 p {
   margin: 0;
+}
+.page__inner {
+  max-width: 500px;
+  margin: 0 auto;
 }
 .container {
   display: block;

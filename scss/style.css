@@ -138,6 +138,11 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 28px;
   line-height: 42px;
@@ -184,6 +189,11 @@ p {
   margin: 0;
 }
 
+.page__inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .container {
   display: block;
   width: calc(100% - 40px);
@@ -194,7 +204,8 @@ p {
 
 .page-header {
   position: relative;
-  height: 240px;
+  height: 64vw;
+  max-height: 335px;
   padding-top: 17px;
   background-image: url("../img/header-bac.png");
   background-size: cover;
@@ -394,6 +405,10 @@ p {
   max-width: 310px;
 }
 
+.intro {
+  padding-top: 30px;
+}
+
 .intro__title {
   width: 100%;
   font-size: 50px;
@@ -418,6 +433,7 @@ p {
   text-align: center;
   background-image: url("../img/prise-bac.png");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .intro__prise--num {
