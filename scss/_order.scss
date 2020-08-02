@@ -1,0 +1,40 @@
+.order {
+  &-title {
+    text-align: center;
+  }
+  &__list {
+    padding-bottom: 50px;
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    border-radius: 50%;
+    background-image: linear-gradient(119deg, #febf94, #e68459);
+    &--img {
+      width: 30px;
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    border: 1px soid #black;
+    &__title {
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    &__sub-title {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 15px;
+      font-family: "HelveticaNeueCyr-Roman", sans-serif;
+      text-align: center;
+    }
+  }
+}
