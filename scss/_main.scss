@@ -106,7 +106,6 @@ $font-fem: Copperplate, sans-serif;
 }
 @font-face {
   font-family: "HelveticaNeueCyr-Roman";
-  font-weight: 300;
   font-style: italic;
   src: local("HelveticaNeueCyr-Roman"),
     url("../fonts/HelveticaNeueCyr-Roman.ttf") format("ttf");
@@ -161,8 +160,8 @@ h2 {
   text-transform: uppercase;
 }
 h3 {
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 19px;
+  line-height: 29px;
   margin: 0;
 }
 h4 {
