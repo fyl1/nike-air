@@ -6,35 +6,37 @@
   bottom: 0;
   display: none;
   z-index: 999;
-  &--active {
-    display: block;
-  }
   &-inner {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    background: rgba(0, 6, 22, 0.8);
+    background: #fdf8f4;
   }
   &-wrapp {
     position: relative;
     display: block;
     max-height: 360px;
-    max-width: 680px;
-
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 0 auto;
     z-index: 5;
-    border-radius: 80px;
-    padding: 70px 100px 80px 120px;
-    background-image: url("../img/фон-модалка.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #fff;
   }
-  &-tel {
-    padding-bottom: 60px;
-    &__title {
-      padding-bottom: 15px;
+
+  &-content {
+    padding: 35px 35px 20px 35px;
+  }
+  &-title {
+    font-size: 18px;
+    font-family: "HelveticaNeueCyr-Roman";
+
+    &--bold {
+      font-size: 17px;
+      font-family: "HelveticaNeueCyr-Bold", sans-serif;
     }
   }
   &-input {
@@ -49,4 +51,12 @@
     right: 40px;
     top: 30px;
   }
+  &-subtitle {
+    font-size: 14px;
+    font-family: "HelveticaNeueCyr-Roman";
+    color: #aeaeae;
+  }
+}
+.modal-active {
+  display: block;
 }
