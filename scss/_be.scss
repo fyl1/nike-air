@@ -1,5 +1,5 @@
 .be {
-  padding: 40px;
+  padding: 40px 0;
   margin-top: 50px;
   background-color: #fef9f6;
   &__item {
@@ -18,12 +18,14 @@
       font-family: "HelveticaNeueCyr-Roman", sans-serif;
       font-weight: 300;
       padding-top: 15px;
+     
     }
     &-img {
       height: 60px;
     }
   }
 }
+
 .be__item-img__img {
   max-height: 60px;
   color: #e88a5f;

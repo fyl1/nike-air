@@ -460,7 +460,7 @@ p {
 }
 
 .be {
-  padding: 40px;
+  padding: 40px 0;
   margin-top: 50px;
   background-color: #fef9f6;
 }
@@ -524,6 +524,72 @@ p {
   align-items: center;
 }
 
+.main-slider__arrow {
+  background: #e19f83;
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 12;
+  cursor: pointer;
+  outline: none !important;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 12;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+}
+
+.main-slider__arrow:hover {
+  background: #fff;
+}
+
+.main-slider-next {
+  top: 50%;
+  right: -35px;
+}
+
+.main-slider-prev {
+  top: 50%;
+  left: -0px;
+}
+
+.main-slider-prev-icon {
+  background-image: url("../img/стрелка_2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+}
+
+.main-slider-next-icon {
+  background-image: url("../img/order.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+}
+
+.main-slider__arrow:focus {
+  outline: none !important;
+}
+
 .subscribe {
   margin: 40px 0;
 }
@@ -541,12 +607,11 @@ p {
 }
 
 .subscribe__title {
-  width: 50%;
+  width: 60%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
   line-height: 20px;
-  padding-right: 20px;
 }
 
 .subscribe__subtitle {
@@ -718,10 +783,16 @@ p {
 }
 
 .part__title {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 230px;
+  height: 30px;
   font-size: 42px;
   font-family: "BebasNeueBold", sans-serif;
   color: #fff;
   padding-top: 42px;
+  z-index: 4;
 }
 
 .part__list {
@@ -907,6 +978,8 @@ p {
   background-repeat: no-repeat;
   border: 2px solid transparent;
   border-radius: 15px;
+  -webkit-box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
+          box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
 }
 
 .btn {

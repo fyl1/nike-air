@@ -1,26 +1,93 @@
 .be-wrapp {
-      width: 100%;
-      height: 100%;
-    }
+  width: 100%;
+  height: 100%;
+}
 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-    .swiper-button-next:after, .swiper-button-prev:after{
-      
-    }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+// .swiper-button-next:after {
+//   content: "";
+//   right: -15px;
+//   left: auto;
+//   width: 50px;
+//   height: 50px;
+//   background-image: url("../img/стрелка\ 1.svg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: 5px;
+//   background-color: red;
+//   border-radius: 50%;
+// }
+// .swiper-button-prev:after {
+// }
+.main-slider__arrow {
+  background: #e19f83;
+  border: none;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  cursor: pointer;
+  outline: none !important;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 12;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  transition: background 500ms ease;
+}
+
+.main-slider__arrow:hover {
+  background: #fff;
+}
+.main-slider-next {
+  top: 50%;
+  right: -35px;
+}
+
+.main-slider-prev {
+  top: 50%;
+  left: -0px;
+}
+
+.main-slider-prev-icon {
+  background-image: url("../img/стрелка_2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+}
+
+.main-slider-next-icon {
+  background-image: url("../img/order.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+}
+
+.main-slider__arrow:focus {
+  outline: none !important;
+}
