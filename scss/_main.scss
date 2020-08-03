@@ -10,7 +10,6 @@ $font-fem: Copperplate, sans-serif;
 
 @font-face {
   font-family: "BebasNeue-Bold";
-  font-weight: 700;
   font-style: normal;
   src: local("BebasNeue Bold"), local("BebasNeue-Bold"),
     url("../fonts/BebasNeueBold.otf") format("otf"),
@@ -25,7 +24,6 @@ $font-fem: Copperplate, sans-serif;
 }
 @font-face {
   font-family: "BebasNeue-Light";
-  font-weight: 300;
   font-style: normal;
   src: local("BebasNeue-Light"), local("BebasNeue-Light"),
     url("../fonts/BebasNeue Light.otf") format("otf"),

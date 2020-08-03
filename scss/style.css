@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: "BebasNeue-Bold";
-  font-weight: 700;
   font-style: normal;
   src: local("BebasNeue Bold"), local("BebasNeue-Bold"), url("../fonts/BebasNeueBold.otf") format("otf"), url("../fonts/BebasNeueBold.ttf") format("ttf");
 }
@@ -21,7 +20,6 @@
 
 @font-face {
   font-family: "BebasNeue-Light";
-  font-weight: 300;
   font-style: normal;
   src: local("BebasNeue-Light"), local("BebasNeue-Light"), url("../fonts/BebasNeue Light.otf") format("otf"), url("../fonts/BebasNeue Light.ttf") format("ttf");
 }
@@ -936,7 +934,6 @@ p {
           align-items: center;
   height: 100%;
   width: 100%;
-  background: #fdf8f4;
 }
 
 .modal-wrapp {
@@ -955,6 +952,7 @@ p {
 }
 
 .modal-title {
+  max-width: 350px;
   font-size: 18px;
   font-family: "HelveticaNeueCyr-Roman";
 }
@@ -974,18 +972,72 @@ p {
 
 .modal-hidden {
   position: absolute;
-  right: 40px;
+  font-size: 20px;
+  right: 30px;
   top: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .modal-subtitle {
+  max-width: 245px;
+  padding: 15px 0;
   font-size: 14px;
   font-family: "HelveticaNeueCyr-Roman";
   color: #aeaeae;
 }
 
+.modal-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 14.88px 1.12px rgba(234, 172, 134, 0.19);
+          box-shadow: 0px 4px 14.88px 1.12px rgba(234, 172, 134, 0.19);
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
 .modal-active {
   display: block;
+}
+
+.modal-title--grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f7c659), color-stop(37%, #f17630), to(#97139e));
+  background-image: linear-gradient(to right, #f7c659, #f17630 37%, #97139e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .btn-main {
@@ -1060,7 +1112,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid transparent;
-  border-radius: 15px;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
           box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
 }
