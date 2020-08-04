@@ -1,0 +1,29 @@
+.reviews {
+  position: relative;
+  height: 557px;
+  background-color: rgb(254, 249, 246);
+  background-image: url("../img/rev-bac.png");
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/tel_rev.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+  }
+  &__title {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  &-wrapp {
+  }
+  &__item {
+    max-width: 180px;
+  }
+}
