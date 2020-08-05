@@ -55,3 +55,8 @@
     font-family: "HelveticaNeueCyr-Light", sans-serif;
   }
 }
+@media (max-width: 450px) {
+  .part-header__img {
+    padding-top: 20px;
+  }
+}

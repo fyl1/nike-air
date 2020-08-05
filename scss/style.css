@@ -623,6 +623,7 @@ p {
 
 .swiper-pagination {
   left: 48%;
+  bottom: 25px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -867,6 +868,12 @@ p {
   font-family: "HelveticaNeueCyr-Light", sans-serif;
 }
 
+@media (max-width: 450px) {
+  .part-header__img {
+    padding-top: 20px;
+  }
+}
+
 .order-title {
   text-align: center;
 }
@@ -939,7 +946,7 @@ p {
 .reviews::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 30px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -964,6 +971,10 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 180px;
+}
+
+.reviews__item--img {
+  min-height: 340px;
 }
 
 .footer {
