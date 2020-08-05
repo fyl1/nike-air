@@ -79,12 +79,12 @@
 }
 .main-slider-next--1 {
   top: 50%;
-  right: -35px;
+  right: -25px;
 }
 
 .main-slider-prev--1 {
   top: 50%;
-  left: 5px;
+  left: 15px;
 }
 
 .main-slider-prev-icon {
@@ -106,7 +106,9 @@
   // height: 20px;
   display: inline-block;
 }
-
+.reviews-wrapp {
+  width: 250px;
+}
 .main-slider__arrow:focus {
   outline: none !important;
 }

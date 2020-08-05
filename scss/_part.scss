@@ -43,12 +43,13 @@
       font-family: "HelveticaNeueCyr-Bold", sans-serif;
       padding-bottom: 15px;
     }
+    &-caption {
+      font-size: 15px;
+      font-family: "HelveticaNeueCyr-Roman", sans-serif;
+      color: #454545;
+    }
   }
-  &-caption {
-    font-size: 15px;
-    font-family: "HelveticaNeueCyr-Roman", sans-serif;
-    color: #454545;
-  }
+
   &--num {
     font-size: 11px;
     font-family: "HelveticaNeueCyr-Light", sans-serif;

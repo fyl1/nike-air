@@ -19,6 +19,9 @@
   // .intro__subtitle
 
   &__subtitle {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
     text-align: center;
     font-family: "HelveticaNeueCyr-Roman";
   }

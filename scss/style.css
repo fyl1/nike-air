@@ -28,7 +28,7 @@
   font-family: "BebasNeue-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local("BebasNeue-Regular"), local("BebasNeue-Regular"), url("../fonts/BebasNeue Regular.otf") format("otf"), url("../fonts/BebasNeue Regular.ttf") format("ttf");
+  src: local("BebasNeue-Regular"), local("BebasNeue-Regular"), url("../fonts/ofont.ru_Bebas Neue.ttf") format("ttf");
 }
 
 @font-face {
@@ -96,8 +96,11 @@
 
 @font-face {
   font-family: "HelveticaNeueCyr-Roman";
-  font-style: italic;
-  src: local("HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+  src: local("HelveticaNeueCyr-Roman"), url("../fonts/helveticaneuecyr-roman.otf") format("otf");
+  src: url("../fonts/helveticaneuecyr-roman.woff") format("woff"), url("../fonts/helveticaneuecyr-roman.woff2") format("woff2");
+  /* Modern Browsers */
 }
 
 @font-face {
@@ -418,6 +421,9 @@ p {
 }
 
 .intro__subtitle {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
   text-align: center;
   font-family: "HelveticaNeueCyr-Roman";
 }
@@ -575,12 +581,12 @@ p {
 
 .main-slider-next--1 {
   top: 50%;
-  right: -35px;
+  right: -25px;
 }
 
 .main-slider-prev--1 {
   top: 50%;
-  left: 5px;
+  left: 15px;
 }
 
 .main-slider-prev-icon {
@@ -591,6 +597,10 @@ p {
 .main-slider-next-icon {
   margin-top: 10px;
   display: inline-block;
+}
+
+.reviews-wrapp {
+  width: 250px;
 }
 
 .main-slider__arrow:focus {
@@ -714,6 +724,10 @@ p {
   margin-right: 5px;
 }
 
+.gallery-top img {
+  width: 95%;
+}
+
 .extra {
   margin-top: 50px;
 }
@@ -818,7 +832,7 @@ p {
   padding-bottom: 15px;
 }
 
-.part-caption {
+.part__item-caption {
   font-size: 15px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   color: #454545;
@@ -907,7 +921,7 @@ p {
   background-image: url("../img/tel_rev.png");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 5;
+  z-index: 1;
 }
 
 .reviews__title {
