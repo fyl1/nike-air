@@ -508,7 +508,7 @@ p {
   background-color: #fef9f6;
 }
 
-.be-wrapp {
+.reviews .be-wrapp {
   width: 100%;
   height: 100%;
 }
@@ -521,8 +521,8 @@ p {
   overflow: inherit;
 }
 
-.reviews .swiper-container {
-  overflow: inherit;
+.extra-swiper {
+  min-height: 150px;
 }
 
 .swiper-slide {
@@ -589,6 +589,16 @@ p {
   left: 15px;
 }
 
+.main-slider-next--2 {
+  top: 50%;
+  right: -10px;
+}
+
+.main-slider-prev--2 {
+  top: 50%;
+  left: 30px;
+}
+
 .main-slider-prev-icon {
   margin-top: 10px;
   display: inline-block;
@@ -600,11 +610,23 @@ p {
 }
 
 .reviews-wrapp {
-  width: 250px;
+  width: 150px;
 }
 
 .main-slider__arrow:focus {
   outline: none !important;
+}
+
+.reviews .reviews-wrapp .swiper-pagination {
+  bottom: -20px;
+}
+
+.swiper-pagination {
+  left: 48%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin-right: 2px;
 }
 
 .subscribe {
@@ -765,18 +787,20 @@ p {
 }
 
 .extra-card__title {
+  text-align: left;
   color: black;
   font-size: 13px;
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
 
 .extra-card-stock {
-  padding-left: 20px;
+  padding-left: 10%;
   font-size: 9px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
 }
 
 .extra-card__sub-title {
+  text-align: left;
   font-size: 12px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   color: #dcdcdc;
@@ -905,7 +929,8 @@ p {
 
 .reviews {
   position: relative;
-  height: 557px;
+  height: 560px;
+  margin: 30px 0;
   background-color: #fef9f6;
   background-image: url("../img/rev-bac.png");
   background-repeat: no-repeat;
@@ -931,6 +956,13 @@ p {
 }
 
 .reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 180px;
 }
 

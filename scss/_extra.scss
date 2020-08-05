@@ -31,16 +31,18 @@
     padding: 20px 15px 25px 25px;
   }
   &-card__title {
+    text-align: left;
     color: black;
     font-size: 13px;
     font-family: "HelveticaNeueCyr-Bold", sans-serif;
   }
   &-card-stock {
-    padding-left: 20px;
+    padding-left: 10%;
     font-size: 9px;
     font-family: "HelveticaNeueCyr-Roman", sans-serif;
   }
   &-card__sub-title {
+    text-align: left;
     font-size: 12px;
     font-family: "HelveticaNeueCyr-Roman", sans-serif;
     color: #dcdcdc;
