@@ -96,7 +96,6 @@
 
 @font-face {
   font-family: "HelveticaNeueCyr-Roman";
-  font-weight: 100;
   font-style: normal;
   src: local("HelveticaNeueCyr-Roman"), url("../fonts/helveticaneuecyr-roman.otf") format("otf");
   src: url("../fonts/helveticaneuecyr-roman.woff") format("woff"), url("../fonts/helveticaneuecyr-roman.woff2") format("woff2");
@@ -158,7 +157,7 @@ h2 {
 
 h3 {
   font-size: 19px;
-  line-height: 29px;
+  line-height: 27px;
   margin: 0;
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
@@ -421,11 +420,14 @@ p {
 }
 
 .intro__subtitle {
-  max-width: 90%;
+  max-width: 305px;
   margin: 0 auto;
   font-size: 16px;
   text-align: center;
+  line-height: 1.2;
+  font-weight: 500;
   font-family: "HelveticaNeueCyr-Roman";
+  color: black;
 }
 
 .intro__prise {
@@ -492,7 +494,7 @@ p {
   font-size: 14px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   font-weight: 300;
-  padding-top: 15px;
+  padding-top: 7px;
 }
 
 .be__item-img {
@@ -610,7 +612,11 @@ p {
 }
 
 .reviews-wrapp {
-  width: 150px;
+  width: 170px;
+}
+
+.reviews .swiper-container {
+  bottom: 21px;
 }
 
 .main-slider__arrow:focus {
@@ -748,7 +754,13 @@ p {
 }
 
 .gallery-top img {
-  width: 95%;
+  width: 94%;
+}
+
+@media (max-width: 350px) {
+  .gallery-top img {
+    width: 92%;
+  }
 }
 
 .extra {
@@ -805,6 +817,17 @@ p {
   font-size: 12px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   color: #dcdcdc;
+  padding-top: 5px;
+}
+
+@media (max-width: 340px) {
+  .extra__img {
+    width: 110%;
+    position: relative;
+  }
+  .extra-card__sub-title {
+    padding-top: 2px;
+  }
 }
 
 .part {
@@ -874,6 +897,12 @@ p {
   }
 }
 
+@media (max-width: 350px) {
+  .part-header__img {
+    padding-top: 40px;
+  }
+}
+
 .order-title {
   text-align: center;
 }
@@ -897,6 +926,7 @@ p {
   margin-top: -25px;
   border-radius: 50%;
   background-image: linear-gradient(119deg, #febf94, #e68459);
+  margin-bottom: 15px;
 }
 
 .order__img--img {
@@ -919,11 +949,15 @@ p {
           align-items: center;
   margin-top: 75px;
   border: 1px soid #black;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 22.32px 1.68px rgba(219, 219, 219, 0.22);
+          box-shadow: 0px 8px 22.32px 1.68px rgba(219, 219, 219, 0.22);
+  border-radius: 10px;
 }
 
 .order-card__title {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 6px;
 }
 
 .order-card__sub-title {
@@ -932,6 +966,7 @@ p {
   font-size: 15px;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .reviews {
@@ -974,7 +1009,8 @@ p {
 }
 
 .reviews__item--img {
-  min-height: 340px;
+  min-height: 372px;
+  border-radius: 10px 10px 8px 8px;
 }
 
 .footer {
@@ -1033,14 +1069,15 @@ p {
   display: block;
   max-height: 360px;
   width: calc(100% - 40px);
-  max-width: 500px;
+  max-width: 380px;
   margin: 0 auto;
   z-index: 5;
   background-color: #fff;
 }
 
 .modal-content {
-  padding: 35px 35px 20px 35px;
+  padding: 35px 25px 10px 25px;
+  max-width: 320px;
 }
 
 .modal-title {
@@ -1065,8 +1102,8 @@ p {
 .modal-hidden {
   position: absolute;
   font-size: 20px;
-  right: 30px;
-  top: 30px;
+  right: 20px;
+  top: 15px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1133,22 +1170,49 @@ p {
 }
 
 .btn-main {
+  position: relative;
   width: 262px;
   height: 73px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#febf94), to(#e68459));
-  background-image: linear-gradient(to right, #febf94, #e68459);
+  background-image: linear-gradient(-102deg, #febf94 0%, #e68459 100%);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid transparent;
-  border-radius: 15px;
+  border: none;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
           box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
+  z-index: 2;
+}
+
+.btn-main .btn__text {
+  font-family: "HelveticaNeueCyr-Roman" sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.modal-btn--shadow {
+  border-radius: 10px;
+}
+
+.modal-btn--shadow::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 262px;
+  height: 73px;
+  -webkit-box-shadow: 0px 3px 2px 0px #da7844;
+          box-shadow: 0px 3px 2px 0px #da7844;
+  border-radius: 10px;
 }
 
 .btn {
   color: #fff;
   background-color: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .btn:focus {
@@ -1164,15 +1228,23 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__body--img {
+  width: 12px;
+  margin-right: 5px;
+  margin-top: 3px;
 }
 
 .btn__body__text {
-  font-family: "HelveticaNeueCyr-Roman";
+  font-family: "HelveticaNeueCyr-Roman" sans-serif;
   width: 100%;
   text-align: center;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   padding: 10px 0;
   color: #fff;
@@ -1181,30 +1253,32 @@ p {
 .subscribe-btn {
   display: inline-block;
   width: 135px;
-  height: 35px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f7c659), to(#97139e));
-  background-image: linear-gradient(to right, #f7c659, #97139e);
+  height: 45px;
+  margin-left: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f7c659), color-stop(37%, #f17630), to(#97139e));
+  background-image: linear-gradient(to right, #f7c659, #f17630 37%, #97139e);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid transparent;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 .subscribe-btn .btn__text {
-  text-align: center;
+  text-align: left;
   font-size: 10px;
-  font-family: "HelveticaNeueCyr-Medium";
+  font-family: "HelveticaNeueCyr-Medium" sans-serif;
 }
 
 .modal-btn {
   width: 245px;
+  max-width: 100%;
   height: 70px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f7c659), color-stop(37%, #f17630), to(#97139e));
   background-image: linear-gradient(to right, #f7c659, #f17630 37%, #97139e);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid transparent;
-  border-radius: 20px;
+  border: none;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
           box-shadow: 0px 30px 40px 0px rgba(254, 191, 148, 0.24);
 }

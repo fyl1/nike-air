@@ -46,5 +46,16 @@
     font-size: 12px;
     font-family: "HelveticaNeueCyr-Roman", sans-serif;
     color: #dcdcdc;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 340px) {
+  .extra__img {
+    width: 110%;
+    position: relative;
+  }
+  .extra-card__sub-title {
+    padding-top: 2px;
   }
 }

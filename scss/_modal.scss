@@ -20,14 +20,15 @@
     display: block;
     max-height: 360px;
     width: calc(100% - 40px);
-    max-width: 500px;
+    max-width: 380px;
     margin: 0 auto;
     z-index: 5;
     background-color: #fff;
   }
 
   &-content {
-    padding: 35px 35px 20px 35px;
+    padding: 35px 25px 10px 25px;
+    max-width: 320px;
   }
   &-title {
     max-width: 350px;
@@ -49,8 +50,8 @@
   &-hidden {
     position: absolute;
     font-size: 20px;
-    right: 30px;
-    top: 30px;
+    right: 20px;
+    top: 15px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -94,6 +95,6 @@
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
 
-.blur{
+.blur {
   filter: blur(2px);
 }
