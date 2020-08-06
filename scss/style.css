@@ -445,6 +445,7 @@ p {
 
 .intro__prise--num {
   font-size: 46px;
+  font-family: "BebasNeue-Regular";
 }
 
 .text--orange {
@@ -1264,7 +1265,7 @@ p {
 }
 
 .subscribe-btn .btn__text {
-  text-align: left;
+  text-align: le;
   font-size: 10px;
   font-family: "HelveticaNeueCyr-Medium" sans-serif;
 }
